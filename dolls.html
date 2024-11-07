@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unit 4 Project</title>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: drac;
+        src: url("https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Gothikka-bold.ttf?v=1730914664262")
+      }
+       @font-face {
+        font-family: brush;
+        src: url("https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/FIGHTBACK.ttf?v=1730915310645")
+      }
+
+div {background-color: #000000;}
+  
+div a {
+  text-decoration: none;
+  font-family: brush;
+  color: white;
+  font-size: 38px;
+  padding: 15px;
+  display:inline-block;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: pink;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 250px;
+  display: none;
+}
+ul li ul li { 
+  background: pink; 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #ff99a9;}
+  
+body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+      
+    .fixed-header {
+        width: 100%;
+        position: fixed;        
+        background: black;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    
+    nav a{
+        color: white;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+      
+      html { 
+  background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f34be48a-0d41-4f5e-b7ca-f973db286eb8/d58yqwh-98bd4ebf-79b8-4dc8-aec6-27a53fccb242.jpg/v1/fill/w_800,h_413,q_75,strp/monster_high_background_pattern_by_thestralwizard_d58yqwh-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDEzIiwicGF0aCI6IlwvZlwvZjM0YmU0OGEtMGQ0MS00ZjVlLWI3Y2EtZjk3M2RiMjg2ZWI4XC9kNTh5cXdoLTk4YmQ0ZWJmLTc5YjgtNGRjOC1hZWM2LTI3YTUzZmNjYjI0Mi5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.W1nbAD1HMqYNv67N5spKDBROE4kxo9pELob9Sp2RhVI) 
+  no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+      table{
+  text-align:center;
+  background-color: white;
+  border-radius:50px;
+  padding:18px;
+}
+      #ghouls {
+  text-align:center;
+  background-color: white;
+  width: 800px;
+  border-radius:10px;
+  padding:4px;
+  }
+      
+      h2 {
+        font-size: 5em;
+        font-family: drac;
+      }
+      
+      img {
+        height: 300px;
+      }
+      
+      .symbol
+    {
+    height: 100px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 0.4s ease;
+      }
+      
+      .symbol:hover
+    {transform: scale(0.8);}
+      
+      h3 {
+        font-family: brush;
+        font-size: 2em;
+        color: #2bb5a5;
+        font-style: italic;
+      }
+      
+      table {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      p, h3, h2{
+        text-align: center;
+      }
+
+      #ghoulia {
+        color: #d11342;
+      }
+      #cleo {
+        color: #fdb913;
+      }
+      #lagoona {
+        color: #8bccc5;
+      }
+      #frankie {
+        color: #02afdc;
+      }
+      #clawdeen {
+        color: #9d8dc3;
+      }
+      #draculaura {
+        color: #e977af;
+      }
+      #top {color:white}
+      #others {color:white}
+    </style>
+  </head>
+  <body>
+    <div class="fixed-header">
+        <div class="container">
+          <nav>
+  <ul>
+    <li><a href="index.html">Home Page</a></li>
+  </ul>
+  <ul>
+    <li>
+      <a href="dolls.html">Dolls</a>
+      <ul>
+        <li><a href="dolls.html#ghoulia">Ghoulia Yelps</a></li>
+        <li><a href="dolls.html#cleo">Cleo de Nile</a></li>
+        <li><a href="dolls.html#lagoona">Lagoona Blue</a></li>
+        <li><a href="dolls.html#frankie">Frankie Stein</a></li>
+        <li><a href="dolls.html#clawdeen">Clawdeen Wolf</a></li>
+        <li><a href="dolls.html#draculaura">Draculaura</a></li>
+        <li><a href="dolls.html#others">Others</a></li>
+      </ul>
+    </li>
+  </ul>
+  <ul>
+    <li><a href="movies.html">Movies</a></li>
+  </ul>
+   </nav>
+        </div>
+    </div>
+    
+  <h2 id="top">The OGs</h2>
+   <table>
+     <tr>
+     <td>  <img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-06%20at%2011.28.41%20AM.png?v=1730910527865">
+</td>
+       <td>  <img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-06%20at%2011.29.52%20AM.png?v=1730910597506">
+</td>
+       <td>  <img src="https://i.pinimg.com/736x/23/23/79/232379ebbec342546d7191f86c0eea2b.jpg">
+</td>
+       <td>  <img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-06%20at%2011.31.12%20AM.png?v=1730910679298">
+</td>
+       <td>  <img src="https://i.ebayimg.com/images/g/hcgAAOSwm8VU1o5N/s-l1600.jpg">
+</td>
+       <td>  <img src="https://www.youloveit.com/uploads/posts/2024-03/1710445829_youloveit_com_monster_high_reproduction_doll_2024_01.jpg">
+</td>
+     </tr>
+    </table>
+      <br>
+    <p>
+    <a href="#ghoulia"
+      ><img
+        class="symbol"
+        src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/57eb39e1-8428-41b2-a77a-162280cae069.image.png?v=1730846983601"
+    /></a>
+
+    <a href="#cleo"
+      ><img
+        class="symbol"
+        src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/6917e50b-3adc-44ce-be98-236c23a82db0.image.png?v=1730846969087"
+    /></a>
+
+    <a href="#lagoona"
+      ><img
+        class="symbol"
+        src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/7890085453f9d8e54e04edf85cc20da8.png?v=1730846809236"
+    /></a>
+
+    <a href="#frankie"
+      ><img
+        class="symbol"
+        src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/f9f91108-ac65-4a63-bf64-12b050e1d039.image.png?v=1730847021724"
+    /></a>
+
+    <a href="#clawdeen"
+      ><img
+        class="symbol"
+        src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/6fa96d03-fd91-4fb8-90ab-fed451715357.image.png?v=1730846899378"
+    /></a>
+
+    <a href="#draculaura"
+      ><img
+        class="symbol"
+        src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/17002fae-bc4d-45e1-94a8-e78ee969d6f9.image.png?v=1730846938542"
+    /></a>
+
+    <br>
+    
+    <a href="#others">
+      <img 
+        class="symbol"
+      src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%208.51.59%20PM.png?v=1730857968640"></a>
+ </p>
+    <h2 id="ghoulia">Ghoulia Yelps</h2>
+    <table>
+      <tr>
+      <th>Scaris: City of Frights</th>
+        <th>Ghoul's Night Out</th>
+        <th>Sweet Screams</th>
+        <th>Ghouluxe</th>
+      </tr>
+      <tr>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%208.57.14%20PM.png?v=1730858238912"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%208.59.16%20PM.png?v=1730858360984"></td>
+      <td><img src="https://i.pinimg.com/474x/88/03/c3/8803c38adefa82faac46be943f5cef74.jpg"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.03.20%20PM.png?v=1730858605113"></td>
+      </tr>
+      <tr>
+      <th>Skultimate Roller Maze</th>
+      <th>Deadfast</th>
+      <th>Gloom Dance</th>
+      <th>Daughter of the Zombies</th>
+      </tr>
+      <tr>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.14.17%20PM.png?v=1730859261871"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.07.32%20PM.png?v=1730858857614"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.08.58%20PM.png?v=1730858942514"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.11.58%20PM.png?v=1730859124085"></td>
+      </tr>
+    </table>
+    
+    <h3><a href="#top">BACK TO TOP</a></h3>
+    
+    <h2 id="cleo">Cleo de Nile</h2>
+    
+    <table>
+      <tr>
+      <th>Dawn of the Dance</th>
+      <th>Gloom Beach</th>
+      <th>Fright, Camera, Action!</th>
+      <th>Scaris: City of Frights</th>
+      </tr>
+      <tr>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.20.29%20PM.png?v=1730859633923"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.21.11%20PM.png?v=1730859675843"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.23.16%20PM.png?v=1730859800530"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.26.08%20PM.png?v=1730859974543"></td>
+      </tr>
+      <tr>
+      <th>Freaky Fusion</th>
+        <th>Daughter of the Mummy</th>
+      <th>Mummy Majesties</th>
+      <th>Midnight Runway</th>
+      </tr>
+      <tr>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.37.22%20PM.png?v=1730860646714"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.31.54%20PM.png?v=1730860318301"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.33.23%20PM.png?v=1730860408117"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.34.52%20PM.png?v=1730860499123"></td>
+      </tr>
+    </table>
+    
+        <h3><a href="#top">BACK TO TOP</a></h3>
+    
+    <h2 id="lagoona">Lagoona Blue</h2>
+    <table>
+      <tr>
+        <th>Dawn of the Dance</th>
+        <th>Dead Tired</th>
+        <th>Skull Shore</th>
+        <th>Great Scarrier Reef</th>
+      </tr>
+      <tr>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/d3f18ea8-704c-43e9-8a6e-e5a558cb28f6.image.png?v=1730383731521"
+          />
+        </td>
+        <td>
+          <img
+            src="https://m.media-amazon.com/images/I/81kDZMqIoHL._AC_UF894,1000_QL80_.jpg"
+          />
+        </td>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/a1121991-7618-4baa-b2b1-c8c69a741222.image.png?v=1730383885542"
+          />
+        </td>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%2010.03.10%20PM.png?v=1730862195065"
+          />
+        </td>
+      </tr>
+      <tr>
+        <th>Monster Exchange Program</th>
+        <th>School's Out</th>
+        <th>Make a Splash</th>
+        <th>Frights, Camera, Action!</th>
+      </tr>
+      <tr>
+        <td>
+        <img
+             src="https://m.media-amazon.com/images/I/811GRZIbtYL._AC_UF894,1000_QL80_.jpg">
+        </td>
+        <td>
+          <img
+            src="https://i0.wp.com/dollect.net/wp-content/uploads/2023/07/Schools-Out-Lagoona-Blue1.jpg?resize=300%2C669&ssl=1"
+          />
+        </td>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-10-31%20at%2010.14.33%20AM.png?v=1730384077543"
+          />
+        </td>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-10-31%20at%2010.15.30%20AM.png?v=1730384134251"
+          />
+        </td>
+      </tr>
+    </table>
+
+        <h3><a href="#top">BACK TO TOP</a></h3>
+    
+    <h2 id="frankie">Frankie Stein</h2>
+
+    <table>
+      <tr>
+      <th>School's Out</th>
+      <th>Classroom</th>
+      <th>Sweet 1600</th>
+      <th>Ghouls Rule</th>
+      </tr>
+      <tr>
+      <td><img src="https://m.media-amazon.com/images/I/816WDEAJepL.jpg"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.42.01%20PM.png?v=1730860925611"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.44.43%20PM.png?v=1730861087745"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.44.06%20PM.png?v=1730861051285"></td>
+      </tr>
+      <tr>
+      <th>Sweet Screams</th>
+      <th>Freak Du Chic</th>
+      <th>Stiched in Style</th>
+      <th>13 Wishes</th>
+      </tr>
+      <tr>
+      <td><img src="https://cdn11.bigcommerce.com/s-cy4lua1xoh/images/stencil/1280x1280/products/25585/220553/monster-high-sweet-screams-frankie-stein-doll-with-watzit-2013-mattel-bhn02__15446.1689715422.jpg?c=1"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.49.14%20PM.png?v=1730861358811"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.50.57%20PM.png?v=1730861462122"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%209.53.56%20PM.png?v=1730861642408"></td>
+      </tr>
+    </table>
+    
+        <h3><a href="#top">BACK TO TOP</a></h3>
+
+    <h2 id="clawdeen">Clawdeen Wolf</h2>
+    <table>
+      <tr>
+        <th>Dead Tired</th>
+        <th>School's Out</th>
+        <th>Ghouls Rule</th>
+        <th>I Heart Fashion</th>
+      </tr>
+      <tr>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-10-31%20at%2010.05.04%20AM.png?v=1730383510114"
+          />
+        </td>
+        <td>
+          <img
+            src="https://i0.wp.com/dollect.net/wp-content/uploads/2023/07/Schools-Out-Clawdeen-Wolf1.jpg?resize=300%2C723&ssl=1"
+          />
+        </td>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-04%20at%2010.12.23%20AM.png?v=1730733149215"
+          />
+        </td>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-04%20at%2010.13.25%20AM.png?v=1730733211713"
+          />
+        </td>
+      </tr>
+      <tr>
+        <th>13 Wishes</th>
+        <th>New Scaremester</th>
+        <th>Freak Du Chic</th>
+        <th>Boo York, Boo York</th>
+      </tr>
+      <tr>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-04%20at%2010.15.44%20AM.png?v=1730733350600"
+          />
+        </td>
+        <td>
+          <img
+            src="https://i.pinimg.com/474x/d5/fd/7c/d5fd7cc562275a2aac7ce56c28c0a35e.jpg"
+          />
+        </td>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-04%20at%2010.19.22%20AM.png?v=1730733566589"
+          />
+        </td>
+        <td>
+        <img
+             src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%2010.10.30%20PM.png?v=1730862634695">
+        </td>
+      </tr>
+    </table>
+
+        <h3><a href="#top">BACK TO TOP</a></h3>
+
+    <h2 id="draculaura">Draculaura</h2>
+    <table>
+      <tr>
+        <th>Dead Tired</th>
+        <th>Dawn of the Dance</th>
+        <th>School's Out</th>
+        <th>Scaris: City of Frights</th>
+      </tr>
+      <tr>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-10-31%20at%2010.05.59%20AM.png?v=1730383563040"
+          />
+        </td>
+        <td><img src="https://i.redd.it/fke0oiqcfl861.jpg" /></td>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-10-31%20at%2010.30.31%20AM.png?v=1730385035385"
+          />
+        </td>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-04%20at%209.39.30%20AM.png?v=1730731177263"
+          />
+        </td>
+      </tr>
+      <tr>
+        <th>Make a Splash</th>
+        <th>Howliday</th>
+        <th>Sweet Screams</th>
+        <th>Boo York, Boo York</th>
+      </tr>
+      <tr>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-04%20at%209.49.34%20AM.png?v=1730731778416"
+          />
+        </td>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%2010.07.07%20PM.png?v=1730862432324"
+          />
+        </td>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-04%20at%209.56.28%20AM.png?v=1730732220919"
+          />
+        </td>
+        <td>
+          <img
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-04%20at%2010.00.13%20AM.png?v=1730732418296"
+          />
+        </td>
+      </tr>
+    </table>
+       
+    <h3><a href="#top">BACK TO TOP</a></h3>
+
+    <h2 id="others">
+      Others
+    </h2>
+    
+    <table>
+      <tr>
+      <th>Toralei: Ghoul Fish</th>
+      <th>Toralei: Garden Ghouls</th>
+      <th>Werecats</th>
+      <th>Meowlody & Purrsephone: Zombie Shake</th>
+      </tr>
+      <tr>
+      <td><img src="https://m.media-amazon.com/images/I/81VMFeqwoiL._AC_UF894,1000_QL80_.jpg"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-06%20at%2011.15.08%20AM.png?v=1730909715101"></td>
+      <td><img src="https://live.staticflickr.com/7131/7845281044_310076b3c1_b.jpg"></td>
+      <td><img src="https://mhcollector.com/wp-content/uploads/2015/06/Zombie-Shake-Meowlody-Purrsephone-s.jpg"></td>
+      </tr>
+      
+      <tr>
+      <th>Abbey Dead Tired</th>
+      <th>Abbey</th>
+      <th>Skelita Dia de los Muertos</th>
+      <th>Jinafire</th>
+      </tr>
+      <tr>
+      <td><img src="https://m.media-amazon.com/images/I/712j+KqQyCL.jpg"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%2010.25.43%20PM.png?v=1730863548694"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%2010.28.28%20PM.png?v=1730863712975"></td>
+      <td><img src="https://m.media-amazon.com/images/I/81wgQKu7z6L.jpg"></td>
+      </tr>
+      
+      <tr>
+      <th>Lorna McNessie</th>
+      <th>Operetta Frights, Camera, Action!</th>
+      <th>Cupid</th>
+      <th>Rochelle Haunted</th>
+      </tr>
+      <tr>
+      <td><img src="https://m.media-amazon.com/images/I/61a36e3ASWL._AC_UF894,1000_QL80_.jpg"></td>
+      <td><img src="https://mhcollector.com/wp-content/uploads/2015/06/Frights-Camera-Action-Operetta.jpg"></td>
+      <td><img src="https://m.media-amazon.com/images/I/81qUe7CWukL._AC_SL1500_.jpg"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%2010.37.02%20PM.png?v=1730864226373"></td>
+      </tr>
+      
+      <tr>
+      <th>Catty Noir</th>
+      <th>Spectra Dead Tired</th>
+      <th>Spectra Power Ghouls</th>
+      <th>Spectra Dot Dead Gorgeous</th>
+      </tr>
+      <tr>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%2011.04.32%20PM.png?v=1730865877519"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%2010.40.19%20PM.png?v=1730864423991"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%2010.41.50%20PM.png?v=1730864514874"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%2010.42.57%20PM.png?v=1730864583025"></td>
+      </tr>
+      
+      <tr>
+      <th>Amanita Nightshade</th>
+      <th>Avea Trotter</th>
+      <th>Catrine DeMew Scaris</th>
+      <th>Elissabat</th>
+      </tr>
+      <tr>
+      <td><img src="https://i0.wp.com/dollect.net/wp-content/uploads/2023/07/Amanita-Nightshade.jpg?resize=400%2C821&ssl=1"></td>
+      <td><img src="https://m.media-amazon.com/images/I/71VneZ7-6ML.jpg"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%2010.48.47%20PM.png?v=1730864931967"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%2011.14.29%20PM.png?v=1730866474161"></td>
+      </tr>
+      
+      <tr>
+      <th>Howleen Wolf</th>
+      <th>Robecca Steam</th>
+      <th>Sirena Von Boo</th>
+      <th>Twyla Boogeyman</th>
+      </tr>
+      <tr>
+      <td><img src="https://treasurejunkeez.com/cdn/shop/products/image_f437418e-6290-46c5-adae-d465d74b3355_580x.jpg?v=1606197920"></td>
+      <td><img src="https://mhcollector.com/wp-content/uploads/2017/02/Ghouls-Alive-Robecca-Steam-1.jpg"></td>
+      <td><img src="https://m.media-amazon.com/images/I/81ETihbJYwL.jpg"></td>
+      <td><img src="https://preview.redd.it/whats-your-favourite-doll-for-each-character-day-6-twyla-v0-x6nhcxb99doc1.jpeg?width=825&format=pjpg&auto=webp&s=216b4badd82e3cee4c8926785b826f198e215fa2"></td>
+      </tr>
+      
+      <tr>
+      <th>Venus McFlytrap</th>
+      <th>Wydowna Spider</th>
+      <th>Batsy Claro</th>
+      <th>Honey Swamp</th>
+      </tr>
+      <tr>
+      <td><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEqGhi6mRwE0eYrarK2oGdo5kmuEcDduhJDcw7PZ70J0bjRT7fgCmoEjHBW25mVQYH5QNAqik6-M5xZ6RU_Wg7YCgsUD5In6M7wLAAIERHrdgkNZ7-fRr5EocqA1GouMO-sPhK-ivzf76G/s1600/venus12.jpg"></td>
+      <td><img src="https://thumbs.coleka.com/media/item/201708/22/poupees-monster-high-wydowna-spider-webarella-power-ghouls-217.webp"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-05%20at%2011.07.30%20PM.png?v=1730866055583"></td>
+      <td><img src="https://i5.walmartimages.com/seo/Monster-High-Frights-Camera-Action-Honey-Swamp-Doll_0ab73396-e082-40e6-930c-47ef239b5af4.bf3fb34e69ced68d1a24c270e38a4892.jpeg"></td>
+      </tr>
+      
+      <tr>
+      <th>Nefera Mummy Majesties</th>
+      <th>Nefera de Nile</th>
+      <th>Viperine Gorgon</th>
+      <th>Vandala Doubloons</th>
+      </tr>
+      <tr>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-06%20at%2010.31.53%20AM.png?v=1730907119870"></td>
+      <td><img src="https://m.media-amazon.com/images/I/71u4Kh17AFL.jpg"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-06%20at%2010.36.14%20AM.png?v=1730907379856"></td>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-06%20at%2010.38.40%20AM.png?v=1730907524494"></td>
+      </tr>
+      
+      <tr>
+      <th>Luna Mothews</th>
+      <th>Kjersti Trollsøn</th>
+      <th>Clawvenus</th>
+      <th>Peri & Pearl</th>      
+      </tr>
+      <tr>
+      <td><img src="https://m.media-amazon.com/images/I/A1PkdrW+YYL._AC_UF894,1000_QL80_.jpg"></td>
+      <td><img src="https://m.media-amazon.com/images/I/81xWJuVw21L._AC_UF894,1000_QL80_.jpg"></td>
+      <td><img src="https://m.media-amazon.com/images/I/81cj47zTlwL._AC_UF894,1000_QL80_.jpg"></td>
+      <td><img src="https://m.media-amazon.com/images/I/812FpaGHKiL._AC_UF894,1000_QL80_.jpg"></td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <tr>
+      <th>Reel Drama Collection</th>
+      </tr>
+      <tr>
+      <td><img src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-06%20at%2011.02.10%20AM.png?v=1730908936476"></td>
+      </tr>
+    </table>
+    
+        <h3><a href="#top">BACK TO TOP</a></h3>
+  </body>
+</html>
