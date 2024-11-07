@@ -14,17 +14,143 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Unit 4 Project</title>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: mh;
+        src: url(https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/RunyTunesRevisitedNF.ttf?v=1730297214498);
+      }
+      @font-face {
+        font-family: brush;
+        src: url("https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/FIGHTBACK.ttf?v=1730915310645")
+      }
+div {background-color: #000000;}
+  
+div a {
+  text-decoration: none;
+  font-family: brush;
+  color: white;
+  font-size: 38px;
+  padding: 15px;
+  display:inline-block;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: pink;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 250px;
+  display: none;
+}
+ul li ul li { 
+  background: pink; 
+  display: block;
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #ff99a9;}
+  
+body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .fixed-header {
+        width: 100%;
+        position: fixed;        
+        background: black;
+        color: #fff;
+        top: 0;
+      }
+    
+    nav a{
+        color: white;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+    
+      html {
+        background: url(https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/Screenshot%202024-11-06%20at%201.41.38%20PM.png?v=1730918505158)
+          no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
 
-<head>
-  <title>Unit 4 Project</title>
-  <meta charset="utf-8">
-  <style>
+      h1 {
+        font-family: mh;
+        font-size: 15em;
+        vertical-align: top;
+        letter-spacing: 2px;
+        background: -webkit-linear-gradient(#ff479e, #ffffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 4px black;
+      }
+      
+      table {
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: bottom;
+      }
 
-  </style>
-</head>
-<body>
+      th {
+        font-family: brush;
+        font-size: 2em;
+        color: black;
+      }
+      
+      img {
+        height: 120px;
+      }
 
- 
-
-</body>
+      h1 {text-align: center}
+      
+    </style>
+  </head>
+  <body>
+    <div class="fixed-header">
+          <nav>
+  <ul>
+    <li><a href="index.html">Home Page</a></li>
+  </ul>
+  <ul>
+    <li>
+      <a href="dolls.html">Dolls</a>
+      <ul>
+        <li><a href="dolls.html#ghoulia">Ghoulia Yelps</a></li>
+        <li><a href="dolls.html#cleo">Cleo de Nile</a></li>
+        <li><a href="dolls.html#lagoona">Lagoona Blue</a></li>
+        <li><a href="dolls.html#frankie">Frankie Stein</a></li>
+        <li><a href="dolls.html#clawdeen">Clawdeen Wolf</a></li>
+        <li><a href="dolls.html#draculaura">Draculaura</a></li>
+        <li><a href="dolls.html#others">Others</a></li>
+      </ul>
+    </li>
+  </ul>
+  <ul>
+    <li><a href="movies.html">Movies</a></li>
+  </ul>
+   </nav>
+        </div>
+    
+    <h1>Monster High</h1> 
+    
+    <audio controls loop style="margin: 0 auto; display: block;">
+    <source 
+            src="https://cdn.glitch.global/59289dd1-fb2c-4ed5-91a2-d039e9193ed2/_Fright%20Song_%20Official%20Music%20Video%20_%20Monster%20High.mp3?v=1730937404394"
+            type="audio/mpeg"
+            >
+    </audio>
+  </body>
 </html>
+<!-- Sources
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_star_rating
+ -->
